@@ -8,7 +8,7 @@ Although I’m technology-agnostic, I love working with tools like Astro, Three.
 
 Some of my projects have been featured on Awwwards, GSAP, and Three.js Journey.
 
-### Interested in learning about this tecnologies/tecnices in the future?
+**I'm interested in learning about these technologies and techniques in the future.**
 
 - [Web-GPU](https://webgpu.org/)
 - [Touchdesigner](https://derivative.ca/)
