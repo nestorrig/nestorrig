@@ -1,0 +1,138 @@
+@import url('fonts.css');
+
+:root {
+  --font-family: 'Geist', sans-serif;
+  --font-title: 'Geist', sans-serif;
+  --font-mono: 'GeistMono', monospace;
+  --font-pixel-circle: 'GeistPixel-Circle', monospace;
+  --font-pixel-grid: 'GeistPixel-Grid', monospace;
+  --font-pixel-line: 'GeistPixel-Line', monospace;
+  --font-pixel-square: 'GeistPixel-Square', monospace;
+  --font-pixel-triangle: 'GeistPixel-Triangle', monospace;
+  --accent-color: #2185D5;
+  --background-color: #F3F3F3;
+  --color-text: #303841;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: var(--background-color);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  padding: 2rem;
+  width: 100%;
+}
+
+strong {
+  font-family: var(--font-pixel-line);
+  font-weight: 100;
+  color: var(--accent-color);
+}
+
+h1 {
+  font-size: 1.5rem;
+  max-width: 25ch;
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+  text-decoration: underline;
+  transition: font-weight 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+a:hover {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  max-width: 50ch;
+  font-size: 2rem;
+}
+
+.section-video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/10;
+  object-position: top;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 25ch;
+}
+
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  align-items: flex-end;
+
+}
+
+
+@media (min-width: 1200px) {
+  .header-content {
+    max-width: none;
+  }
+
+  .main-section {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .section-content {
+    max-width: 50%;
+    font-size: 3rem;
+  }
+
+  .section-video {
+    max-width: 50%;
+
+  }
+}
