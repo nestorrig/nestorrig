@@ -419,6 +419,7 @@ span {
   margin: 0 auto;
 }
 
+.hero__about-title,
 .projects__title,
 .labs__title,
 .demo-reel__title {
@@ -759,6 +760,25 @@ span {
   .hero__quotes__item:nth-child(3) {
     top: 80%;
     left: 60%;
+  }
+
+  .hero__quotes__item:nth-child(4) {
+    top: 0%;
+    left: 8%;
+  }
+
+  .hero__quotes__item:nth-child(5) {
+    top: 65%;
+    left: 3%;
+  }
+
+  .hero__quotes__item:nth-child(6) {
+    top: 45%;
+    right: 3%;
+  }
+
+  .hero__about-title {
+    display: none;
   }
 
   .projects__grid,
