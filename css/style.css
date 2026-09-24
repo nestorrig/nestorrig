@@ -833,6 +833,13 @@ span {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .hero,
+  .projects,
+  .labs,
+  .demo-reel {
+    margin-bottom: 16rem;
+  }
+
   .footer-nav {
     gap: 3rem;
   }
