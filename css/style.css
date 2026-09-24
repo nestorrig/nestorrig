@@ -404,6 +404,97 @@ span {
   animation-delay: calc(0.5s * sibling-index());
 }
 
+/* Projects & Labs */
+.projects,
+.labs {
+  margin-bottom: 8rem;
+}
+
+.projects__container,
+.labs__container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.projects__title,
+.labs__title {
+  font-family: var(--font-pixel-square);
+  font-weight: 100;
+  font-size: clamp(3rem, 8vw, 6rem);
+  margin-bottom: 3rem;
+}
+
+.projects__grid,
+.labs__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.card__media {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--color-text);
+}
+
+.card__media img {
+  display: block;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.card__title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem 1.5rem;
+  flex-shrink: 0;
+}
+
+.card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  text-decoration: none;
+  transition: none;
+}
+
+.card__link__text {
+  display: inline-flex;
+}
+
+.card__link__text .is-space {
+  width: 1ch;
+}
+
+.card__link svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex-shrink: 0;
+}
+
 /* Footer */
 .footer {
   display: flex;
@@ -488,6 +579,11 @@ span {
     left: 60%;
   }
 
+  .projects__grid,
+  .labs__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer {
     padding-block: 5rem;
     padding-bottom: 8rem;
@@ -521,6 +617,10 @@ span {
 
   .header-content {
     max-width: none;
+  }
+
+  .labs__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .footer-nav {
@@ -567,6 +667,20 @@ span {
 
     animation: type-lette-opacity 0.15s linear forwards;
     animation-delay: calc(0.1s + 0.02s * sibling-index());
+  }
+
+  .card__media:hover img {
+    transform: scale(1.03);
+  }
+
+  .card__link:hover {
+    background-color: var(--color-text);
+    color: var(--accent-color);
+  }
+
+  .card__link:hover .card__link__text>span {
+    animation: type-lette-opacity 0.2s linear forwards;
+    animation-delay: calc(0.05s + 0.02s * sibling-index());
   }
 
   .footer-nav a:hover {
