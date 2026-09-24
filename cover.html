@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Nestorrig's Website" />
+  <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
+  <title>Nestorrig - Creative Developer</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    /* cover mobile */
+
+    body {
+      height: 100vh;
+    }
+
+    body,
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero {
+      margin-bottom: 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .hero__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .hero__picture {
+      margin-bottom: 0;
+    }
+
+    .hero__work__roles--break {
+      display: none;
+    }
+
+    /* cover tablet 4/5 */
+    @media (min-width: 700px) {
+      .hero {
+        /* 4rem = body padding (2rem top + 2rem bottom) */
+        aspect-ratio: 4 / 5;
+        height: min(100dvh - 4rem, (100vw - 4rem) * 5 / 4);
+        width: auto;
+        overflow: hidden;
+      }
+
+      .hero__work__status--text {
+        font-size: clamp(1rem, 3vw, 2rem);
+      }
+
+      .hero__title {
+        font-size: clamp(3rem, 11vw, 10rem);
+      }
+
+      .hero__work__roles {
+        font-size: clamp(1.6rem, 4vw, 8rem);
+      }
+
+      .hero__picture {
+        max-width: 400px;
+      }
+    }
+
+    /* cover desktop 1.61  1200 * 630 */
+
+    @media (min-width: 1080px) {
+      .hero {
+        outline: 1px solid var(--accent-color);
+        /* 4rem = body padding (2rem top + 2rem bottom) */
+        aspect-ratio: 1.61 / 1;
+        /* height: min(100dvh - 4rem, (100vw - 4rem) / 1.61);
+        width: auto; */
+        height: 630px;
+        width: 1200px;
+        overflow: hidden;
+        container-type: size;
+      }
+
+      .hero__container {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
+        grid-template-areas:
+          "title  title"
+          "roles  poster"
+          "roles  poster"
+          "status poster"
+          "ss poster";
+        grid-template-columns: 1fr 0.65fr;
+        grid-template-rows: auto minmax(0, 1fr) minmax(0, 1fr);
+      }
+
+      .hero__header {
+        display: contents;
+      }
+
+      .hero__title {
+        grid-area: title;
+        font-size: clamp(3rem, 8.6cqw, 20rem);
+        text-align: start;
+        margin-top: -3rem;
+      }
+
+      .hero__work__status {
+        grid-area: status;
+
+
+        text-align: start;
+      }
+
+      .hero__work__status--text {
+        font-size: 2rem
+      }
+
+      .hero__work__roles {
+        margin-top: -10rem;
+        grid-area: roles;
+        font-size: 7.6cqw;
+        flex-wrap: wrap;
+        text-align: start;
+      }
+
+      .hero__work__roles--break {
+        display: block;
+        flex-basis: 100%;
+        width: 100%;
+        height: 0;
+      }
+
+      .is-developer {
+        padding-left: 0ch;
+        font-size: 3cqw;
+      }
+
+      .hero__poster {
+        grid-area: poster;
+        min-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero__picture {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 1;
+        margin: 0;
+      }
+
+      .hero__picture__svg {
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section class="hero">
+      <div class="hero__container">
+
+        <p class="hero__work__status">
+          <span class="hero__work__status--blink"></span>
+          <span class="hero__work__status--text">Available to work</span>
+        </p>
+
+        <h1 class="hero__title">
+          Nestor Rios Garcia
+        </h1>
+
+
+        <div class="hero__work__roles">
+          <span>[</span>
+          <p class="hero__work__roles--word">
+            <!-- Frontend -->
+            <span class="hero__work__roles--letter is-frontend">F</span>
+            <span class="hero__work__roles--letter is-frontend">r</span>
+            <span class="hero__work__roles--letter is-frontend">o</span>
+            <span class="hero__work__roles--letter is-frontend">n</span>
+            <span class="hero__work__roles--letter is-frontend">t</span>
+            <span class="hero__work__roles--letter is-frontend">e</span>
+            <span class="hero__work__roles--letter is-frontend">n</span>
+            <span class="hero__work__roles--letter is-frontend">d</span>
+            <!-- Motion -->
+            <span class="hero__work__roles--letter is-motion">M</span>
+            <span class="hero__work__roles--letter is-motion">o</span>
+            <span class="hero__work__roles--letter is-motion">t</span>
+            <span class="hero__work__roles--letter is-motion">i</span>
+            <span class="hero__work__roles--letter is-motion">o</span>
+            <span class="hero__work__roles--letter is-motion">n</span>
+            <!-- Creative -->
+            <span class="hero__work__roles--letter is-creative">C</span>
+            <span class="hero__work__roles--letter is-creative">r</span>
+            <span class="hero__work__roles--letter is-creative">e</span>
+            <span class="hero__work__roles--letter is-creative">a</span>
+            <span class="hero__work__roles--letter is-creative">t</span>
+            <span class="hero__work__roles--letter is-creative">i</span>
+            <span class="hero__work__roles--letter is-creative">v</span>
+            <span class="hero__work__roles--letter is-creative">e</span>
+            <!-- WebGL -->
+            <span class="hero__work__roles--letter is-webgl">W</span>
+            <span class="hero__work__roles--letter is-webgl">e</span>
+            <span class="hero__work__roles--letter is-webgl">b</span>
+            <span class="hero__work__roles--letter is-webgl">G</span>
+            <span class="hero__work__roles--letter is-webgl">L</span>
+            <!-- Interactive -->
+            <span class="hero__work__roles--letter is-interactive">I</span>
+            <span class="hero__work__roles--letter is-interactive">n</span>
+            <span class="hero__work__roles--letter is-interactive">t</span>
+            <span class="hero__work__roles--letter is-interactive">e</span>
+            <span class="hero__work__roles--letter is-interactive">r</span>
+            <span class="hero__work__roles--letter is-interactive">a</span>
+            <span class="hero__work__roles--letter is-interactive">c</span>
+            <span class="hero__work__roles--letter is-interactive">t</span>
+            <span class="hero__work__roles--letter is-interactive">i</span>
+            <span class="hero__work__roles--letter is-interactive">v</span>
+            <span class="hero__work__roles--letter is-interactive">e</span>
+          </p>
+          <span class="hero__work__roles--underscore">|</span>
+          <span>]</span>
+          <span class="hero__work__roles--break" aria-hidden="true"></span>
+          <p class="is-developer">Developer</p>
+        </div>
+
+
+        <div class="hero__poster">
+          <div class="hero__picture">
+            <svg class="hero__picture__svg" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <mask id="gridMask" class="grid-mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0"
+                  y="0" width="800" height="800">
+                  <rect width="800" height="800" fill="white" class="rect" />
+                  <rect width="80" height="80" fill="black" />
+                  <rect x="80" y="480" width="80" height="80" fill="black" />
+                  <rect y="400" width="80" height="80" fill="black" />
+                  <rect x="160" y="400" width="80" height="80" fill="black" />
+                  <rect x="160" y="560" width="80" height="80" fill="black" />
+                  <rect x="480" y="560" width="80" height="80" fill="black" />
+                  <rect x="480" y="240" width="80" height="80" fill="black" />
+                  <rect x="400" y="480" width="80" height="80" fill="black" />
+                  <rect y="160" width="80" height="80" fill="black" />
+                  <rect x="80" y="320" width="80" height="80" fill="black" />
+                  <rect x="160" y="160" width="80" height="80" fill="black" />
+                  <rect x="320" y="80" width="80" height="80" fill="black" />
+                  <rect x="400" y="160" width="80" height="80" fill="black" />
+                  <rect x="720" y="480" width="80" height="80" fill="black" />
+                  <rect x="240" y="240" width="80" height="80" fill="black" />
+                  <rect x="480" y="400" width="80" height="80" fill="black" />
+                  <rect x="720" y="80" width="80" height="80" fill="black" />
+                  <rect x="640" width="80" height="80" fill="black" />
+                  <rect x="320" y="640" width="80" height="80" fill="black" />
+                  <rect x="560" y="320" width="80" height="80" fill="black" />
+                  <rect x="240" width="80" height="80" fill="black" />
+                  <rect y="720" width="80" height="80" fill="black" />
+                  <rect x="640" y="160" width="80" height="80" fill="black" />
+                  <rect x="560" y="80" width="80" height="80" fill="black" />
+                  <rect x="720" y="320" width="80" height="80" fill="black" />
+                  <rect x="640" y="400" width="80" height="80" fill="black" />
+                  <rect x="640" y="560" width="80" height="80" fill="black" />
+                  <rect x="560" y="640" width="80" height="80" fill="black" />
+                  <rect x="480" y="720" width="80" height="80" fill="black" />
+                  <rect x="240" y="720" width="80" height="80" fill="black" />
+                  <rect x="80" y="640" width="80" height="80" fill="black" />
+                  <rect x="720" y="720" width="80" height="80" fill="black" />
+                  <rect y="560" width="80" height="80" fill="black" />
+                  <rect x="80" y="80" width="80" height="80" fill="black" />
+                  <rect x="400" width="80" height="80" fill="black" />
+
+                </mask>
+              </defs>
+              <image href="./assets/img/avatar2.webp" width="800" height="800" preserveAspectRatio="xMidYMid slice"
+                mask="url(#gridMask)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+</body>
+
+</html>
