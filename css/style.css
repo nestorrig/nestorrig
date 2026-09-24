@@ -420,7 +420,7 @@ span {
 .footer-nav {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -429,14 +429,16 @@ span {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.5rem;
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   transition: unset;
 }
 
 .footer-nav a svg {
-  transition: all 0.2s ease;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-text);
+  image-rendering: pixelated;
 }
 
 
@@ -491,6 +493,20 @@ span {
     padding-bottom: 8rem;
   }
 
+  .footer-nav {
+    gap: 1.5rem;
+  }
+
+  .footer-nav a {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .footer-nav a svg {
+    width: 3rem;
+    height: 3rem;
+  }
+
 }
 
 /* Desktop */
@@ -505,6 +521,10 @@ span {
 
   .header-content {
     max-width: none;
+  }
+
+  .footer-nav {
+    gap: 3rem;
   }
 }
 
@@ -554,12 +574,8 @@ span {
   }
 
   .footer-nav a:hover svg {
-    transform: scale(0.95);
-  }
-
-  .footer-nav a:hover path {
-    stroke: var(--accent-color);
-    /* fill: var(--accent-color); */
+    transform: scale(1.05);
+    color: var(--accent-color);
   }
 }
 
