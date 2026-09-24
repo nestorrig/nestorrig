@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Nestor Rios Garcia
+Copyright (c) 2023-2026 Nestor Rios Garcia
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +19,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Exclusions
+
+The MIT License above applies only to the source code of this repository
+(HTML, CSS, and JavaScript). It does not apply to the following:
+
+1. Media assets in the `assets/` directory, including photographs, portraits,
+   videos, demo reels, cover images, favicons, and project screenshots.
+   Copyright (c) 2023-2026 Nestor Rios Garcia. All rights reserved.
+   These files may not be copied, modified, redistributed, or used in any
+   other project without prior written permission.
+
+   Some project screenshots depict work created for third-party clients and
+   brands. Their names, logos, and visual identities remain the property of
+   their respective owners and are shown for portfolio purposes only.
+
+2. Fonts in the `fonts/` directory (Geist, Geist Mono, and Geist Pixel), which
+   are distributed under the SIL Open Font License, Version 1.1. See
+   `fonts/OFL.txt` for details.

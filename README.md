@@ -1,5 +1,7 @@
 # Nestorrig _Independent Creative developer_
 
+![Nestor Rios Garcia, Independent Creative Developer, portfolio cover](./assets/img/cover.webp)
+
 Hi, I'm Nestor Rios, an **Independent Creative Developer** passionate about blending design, animation, and technology to craft **interactive web experiences** that connect people and brands.
 
 I collaborate with brands, studios, and organizations looking to stand out in the digital space through visually engaging and technically robust projects.
@@ -16,7 +18,7 @@ On the other hand, I'm studying a Bachelor of Creative Computing at [CENTRO | Di
 
 ### Portfolio
 
-You can find my portfolio [here](https://nestorrig.github.io/nestorrig).
+You can find my portfolio [here](https://nestorrig.github.io/nestorrig). Curious about how it's built? Read the [technical notes](./doc.md).
 
 ---
 
