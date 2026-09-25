@@ -437,9 +437,34 @@ span {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+}
+
+.card__badge {
+  position: absolute;
+  top: 0.1rem;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: calc(100% - 2rem);
+  margin: 0;
+  padding: 0.6rem 1rem;
+  font-family: var(--font-pixel-square);
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--color-text);
+  background-color: var(--accent-color);
+  pointer-events: none;
+}
+
+.card__badge svg {
+  width: auto;
+  height: 1.6rem;
+  flex-shrink: 0;
 }
 
 .card__media {
@@ -888,6 +913,11 @@ span {
 
   .card__media:hover img {
     transform: scale(1.03);
+  }
+
+  .card:has(.card__media:hover) .card__badge {
+    background-color: var(--color-text);
+    color: var(--accent-color);
   }
 
   .card__link:hover {
