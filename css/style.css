@@ -10,6 +10,7 @@
   --font-pixel-square: 'GeistPixel-Square', monospace;
   --font-pixel-triangle: 'GeistPixel-Triangle', monospace;
   --accent-color: #004bff;
+  --fluid-color: #004bff;
   --background-color: #000;
   --color-text: #FFF;
 }
@@ -29,9 +30,8 @@ body {
   font-size: 1.4rem;
   background-color: var(--background-color);
   background-image: url("data:image/svg+xml;utf8,<svg width='51' height='51' viewBox='0 0 51 51' fill='none' xmlns='http://www.w3.org/2000/svg'><line x1='4.18933' y1='0' x2='4.18933' y2='8.124' stroke='%23D9D9D9'/><line y1='3.93469' x2='8.1989' y2='3.93469' stroke='%23D9D9D9'/></svg>");
-  background-size: 12px 12px;
-  background-position-x: 2%;
-  background-position-y: 0.5%;
+  background-size: 16px 16px;
+  background-position: 2% 0.5%;
   color: var(--color-text);
   font-family: var(--font-mono);
   padding: 2rem;
@@ -84,6 +84,15 @@ span {
   color: var(--accent-color);
   background-color: var(--color-text);
 }
+
+#fluid {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 
 .header {
   display: flex;
