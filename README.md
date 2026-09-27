@@ -1,8 +1,8 @@
-# Nestorrig _Independent Creative developer_
+# Nestorrig _Award-winning Independent Creative Developer_
 
 ![Nestor Rios Garcia, Independent Creative Developer, portfolio cover](./assets/img/cover.webp)
 
-Hi, I'm Nestor Rios, an **Independent Creative Developer** passionate about blending design, animation, and technology to craft **interactive web experiences** that connect people and brands.
+Hi, I'm Nestor Rios, an award-winning **Independent Creative Developer** based in Mexico City, working worldwide. I'm passionate about blending design, animation, and technology to craft **interactive web experiences** that connect people and brands.
 
 I collaborate with brands, studios, and organizations looking to stand out in the digital space through visually engaging and technically robust projects.
 
@@ -10,7 +10,11 @@ I love open source and community-driven projects, I like to share my personal pr
 
 I'm flexible with tools, but I often reach for React, Next.js, and Astro; Three.js, R3F, GSAP, and Cinema 4D for 3D and motion; Storyblok or Sanity for content; and Netlify or Vercel to ship.
 
-Some of my projects have been featured on Awwwards, GSAP, and Three.js Journey.
+Some of my work has been recognized with:
+
+- **GSAP Site of the Day** for [Hypefluency](https://www.linkedin.com/feed/update/urn:li:ugcPost:7462359013830291456/) and [AWE MX](https://www.linkedin.com/feed/update/urn:li:ugcPost:7381163585630158849/).
+- **Awwwards Honorable Mention** for [Arcca Group](https://www.awwwards.com/sites/arcca-group).
+- **Three.js Journey Challenge Winner** for [Magic Wand](https://threejs-journey.com/challenges/013-magic-spells).
 
 ### Education
 

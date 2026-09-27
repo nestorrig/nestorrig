@@ -868,6 +868,10 @@ span {
 
 /* Desktop */
 @media (min-width: 1200px) {
+  .header-title {
+    max-width: 57ch;
+  }
+
   .hero__poster {
     margin-block: 16rem 4rem;
   }
