@@ -8,7 +8,9 @@ Technical and visual notes for the Nestorrig portfolio: structure, design decisi
 
 A single-page portfolio built with plain **HTML, CSS, and vanilla JavaScript**. There is no framework, bundler, or build step: the files in the repo are the files that get served.
 
-Almost everything is done in CSS (layout, typing effects, masks, hover animations). JavaScript is only used for the demo reel player.
+Almost everything is done in CSS (layout, typing effects, masks, hover animations). JavaScript is only used for the demo reel player and the fluid cursor effect.
+
+The site is deployed on **Netlify** at [nestorrig.com](https://nestorrig.com). The previous domain, `nestorriosgarcia.com`, redirects to it with a 301.
 
 ## Run locally
 
@@ -24,19 +26,23 @@ npx serve .
 .
 ├── index.html          # The portfolio
 ├── cover.html          # Page used to design and export the social cover image
+├── robots.txt          # Crawl rules and sitemap location
+├── sitemap.xml         # Sitemap for search engines
 ├── css/
 │   ├── style.css       # All site styles
 │   └── fonts.css       # @font-face declarations for Geist, Geist Mono and Geist Pixel
 ├── js/
-│   └── main.js         # Demo reel player
+│   ├── main.js         # Demo reel player
+│   └── pixel.js        # Fluid cursor effect (pixel, ASCII and SVG render modes)
 ├── fonts/              # Geist font files + OFL.txt
 └── assets/
     ├── img/
     │   ├── favicon/    # Favicons, touch icons and site.webmanifest
     │   ├── projects/   # Project card images (1280×720)
     │   ├── labs/       # Lab card images (1280×720)
-    │   └── cover.png   # Social cover (1200×630)
-    └── video/          # Demo reels
+    │   ├── cover.png   # Social cover (1200×630)
+    │   └── nestor-rios-garcia.jpg  # Portrait used in the structured data (1200×1200)
+    └── video/          # Demo reel
 ```
 
 ## Visual design
@@ -142,12 +148,15 @@ Hover effects live inside `@media (hover: hover) and (pointer: fine)`, so touch 
 
 - Card images are WebP at 1280×720 with `loading="lazy"` and explicit `width` / `height` to avoid layout shift.
 - The reel uses `preload="metadata"` and only plays while visible.
-- No external dependencies or requests: fonts are self-hosted.
+- Fonts are self-hosted. The only external request is Tweakpane, and it's loaded on demand only on the cover page's debug panel.
+- The fluid cursor only runs on devices with a mouse or trackpad (`hover: hover` and `pointer: fine`), so phones and tablets skip the simulation entirely.
 
 ### SEO and social sharing
 
-- `index.html` includes description, canonical URL, Open Graph, and Twitter Card tags, using `assets/img/cover.png` (1200×630, PNG for compatibility with LinkedIn and other platforms).
-- `cover.html` has the same tags adapted to the cover page, with `noindex` and a canonical pointing to the main page so it doesn't compete with it in search results.
+- `index.html` includes description, keywords, canonical URL (`https://nestorrig.com/`), Open Graph, and Twitter Card tags, using `assets/img/cover.png` (1200×630, PNG for compatibility with LinkedIn and other platforms).
+- A JSON-LD `Person` block describes who I am: name, role, location, portrait, awards, and `sameAs` links to every social profile, so search engines can connect them to the same person. The social links also carry `rel="me"`.
+- `robots.txt` allows crawling and points to `sitemap.xml`.
+- `cover.html` has the same tags adapted to the cover page, with `noindex` and a canonical pointing to the main page so it doesn't compete with it in search results. It's left out of the sitemap for the same reason.
 - `site.webmanifest` sets the app name and black theme color when the site is installed on a phone.
 
 ### The cover page

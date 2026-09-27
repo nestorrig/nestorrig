@@ -22,7 +22,7 @@ On the other hand, I'm studying a Bachelor of Creative Computing at [CENTRO | Di
 
 ### Portfolio
 
-You can find my portfolio [here](https://nestorrig.github.io/nestorrig). Curious about how it's built? Read the [technical notes](./doc.md).
+You can find my portfolio at [nestorrig.com](https://nestorrig.com). Curious about how it's built? Read the [technical notes](./doc.md).
 
 ---
 
