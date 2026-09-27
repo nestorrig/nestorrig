@@ -138,6 +138,25 @@ span {
   font-weight: 400;
 }
 
+.header-title__link {
+  transition: none;
+}
+
+.header-title__link__text {
+  display: inline-flex;
+}
+
+.header-title__link__text>span {
+  text-decoration: underline;
+}
+
+.header-title__link:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
+  background-color: var(--color-text);
+  color: var(--accent-color);
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -981,6 +1000,16 @@ span {
 
   .demo-reel__play {
     padding: 0.2rem 0.4rem;
+  }
+
+  .header-title__link:hover {
+    background-color: var(--color-text);
+    color: var(--accent-color);
+  }
+
+  .header-title__link:hover .header-title__link__text>span {
+    animation: type-lette-opacity 0.2s linear forwards;
+    animation-delay: calc(0.05s + 0.02s * sibling-index());
   }
 
   .card__link:hover .card__link__text>span {
