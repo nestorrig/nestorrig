@@ -28,7 +28,7 @@ function initPixelFluidCursor() {
     COLOR_G_MULT: 1,
     COLOR_B_MULT: 1,
     COLOR_BASE_HEX: initialFluidHex,
-    DYE_CLAMP: 1.6,
+    DYE_CLAMP: 5.6,
     ASCII_RAMP: " .:-=+*#%@",
   };
   const RENDER_OPTIONS = {
@@ -36,9 +36,11 @@ function initPixelFluidCursor() {
     ASCII: "ascii",
     SVG: "svg",
   };
-  const requestedRender = document.body.dataset.fluidRender;
-  let renderMode = Object.values(RENDER_OPTIONS).includes(requestedRender)
-    ? requestedRender
+  const requestedRenders = (document.body.dataset.fluidRender || "")
+    .split(/[\s,]+/)
+    .filter((mode) => Object.values(RENDER_OPTIONS).includes(mode));
+  let renderMode = requestedRenders.length
+    ? requestedRenders[Math.floor(Math.random() * requestedRenders.length)]
     : "pixel";
   let isAsciiRender = renderMode === "ascii";
   let isSvgRender = renderMode === "svg";

@@ -26,6 +26,7 @@ npx serve .
 .
 ├── index.html          # The portfolio
 ├── cover.html          # Page used to design and export the social cover image
+├── components.html     # Showcase of the site components, one per 100vh section (noindex)
 ├── robots.txt          # Crawl rules and sitemap location
 ├── sitemap.xml         # Sitemap for search engines
 ├── css/
