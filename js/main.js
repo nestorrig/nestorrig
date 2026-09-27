@@ -1,3 +1,10 @@
+const heroQuotes = document.querySelector('.hero__quotes');
+const aboutContainer = document.querySelector('.about__container');
+
+if (heroQuotes && aboutContainer) {
+  aboutContainer.append(heroQuotes.cloneNode(true));
+}
+
 const player = document.querySelector('.demo-reel__player');
 const reel = document.querySelector('.demo-reel__video');
 const playButton = document.querySelector('.demo-reel__play');

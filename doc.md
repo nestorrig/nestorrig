@@ -83,7 +83,7 @@ Name, role, and social links. Each link is split into one `<span>` per letter, a
 
 - **Rotating roles.** `[Frontend | Motion | Creative | WebGL | Interactive] - Developer` is typed letter by letter with a blinking cursor, entirely in CSS. Each word gets a time slot (`--slot-duration`) inside a shared cycle, and each letter is delayed by its position.
 - **Portrait mask.** An SVG `<mask>` made of black squares sits over the photo. Each square animates its fill between black and white with a different delay, so the portrait keeps dissolving and rebuilding in pixels.
-- **Quotes.** Six blue cards that float slowly around the portrait on tablet and desktop, and stack as a list on mobile (with an "About" title only on mobile). On hover, the borders pull inward and the highlighted words invert and flicker.
+- **Quotes.** Six blue cards that float slowly around the portrait on tablet and desktop. On mobile they're hidden from the hero so visitors reach the work faster, and `main.js` clones them into an "About" section after the demo reel. On hover, the borders pull inward and the highlighted words invert and flicker.
 
 ### Projects and Labs
 
@@ -119,7 +119,7 @@ Pixel icons for Instagram, LinkedIn, X, GitHub, and Behance, following the same 
 
 | Breakpoint | Changes |
 | --- | --- |
-| Base (mobile) | Single column, quotes as a list, "About" title visible |
+| Base (mobile) | Single column, quotes moved to an "About" section after the demo reel |
 | `min-width: 768px` | Floating quotes, 2-column grids, header links in one row |
 | `min-width: 1200px` | Larger quotes, 3-column labs, 160px spacing between sections |
 

@@ -318,6 +318,10 @@ span {
   padding-block: 5rem;
 }
 
+.hero .hero__quotes {
+  display: none;
+}
+
 .hero__quotes__item {
   position: relative;
   padding: 2rem;
@@ -416,22 +420,24 @@ span {
 /* Projects & Labs */
 .projects,
 .labs,
-.demo-reel {
+.demo-reel,
+.about {
   margin-bottom: 8rem;
 }
 
 .projects__container,
 .labs__container,
-.demo-reel__container {
+.demo-reel__container,
+.about__container {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.hero__about-title,
 .projects__title,
 .labs__title,
-.demo-reel__title {
+.demo-reel__title,
+.about__title {
   font-family: var(--font-pixel-square);
   font-weight: 100;
   font-size: clamp(3rem, 8vw, 6rem);
@@ -789,6 +795,10 @@ span {
     inset: 0;
   }
 
+  .hero .hero__quotes {
+    display: flex;
+  }
+
   .hero__quotes__item {
     position: absolute;
     max-width: 300px;
@@ -829,7 +839,7 @@ span {
     right: 3%;
   }
 
-  .hero__about-title {
+  .about {
     display: none;
   }
 
