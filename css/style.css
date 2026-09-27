@@ -467,7 +467,23 @@ span {
   line-height: 1.2;
   color: var(--color-text);
   background-color: var(--accent-color);
-  pointer-events: none;
+  text-decoration: none;
+  transition: none;
+}
+
+.card__badge:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 2px;
+  background-color: var(--color-text);
+  color: var(--accent-color);
+}
+
+.card__badge__text {
+  display: inline-flex;
+}
+
+.card__badge__text .is-space {
+  width: 1ch;
 }
 
 .card__badge svg {
@@ -756,7 +772,7 @@ span {
 /* Tablet */
 @media (min-width: 768px) {
   .header-title {
-    max-width: 45ch;
+    max-width: 50ch;
   }
 
   .header-nav {
@@ -924,9 +940,15 @@ span {
     transform: scale(1.03);
   }
 
-  .card:has(.card__media:hover) .card__badge {
+  .card:has(.card__media:hover) .card__badge,
+  .card__badge:hover {
     background-color: var(--color-text);
     color: var(--accent-color);
+  }
+
+  .card__badge:hover .card__badge__text>span {
+    animation: type-lette-opacity 0.2s linear forwards;
+    animation-delay: calc(0.05s + 0.015s * sibling-index());
   }
 
   .card__link:hover {
