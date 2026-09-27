@@ -799,8 +799,8 @@ span {
 
 
   .hero__quotes__item:nth-child(1) {
-    top: 10%;
-    right: 0%;
+    top: 7%;
+    right: 10%;
   }
 
   .hero__quotes__item:nth-child(2) {
@@ -809,18 +809,19 @@ span {
   }
 
   .hero__quotes__item:nth-child(3) {
-    top: 80%;
-    left: 60%;
+    top: 89%;
+    left: 51%;
+
   }
 
   .hero__quotes__item:nth-child(4) {
-    top: 0%;
-    left: 8%;
+    top: -5%;
+    left: 12%;
   }
 
   .hero__quotes__item:nth-child(5) {
-    top: 65%;
-    left: 3%;
+    top: 70%;
+    left: 6%;
   }
 
   .hero__quotes__item:nth-child(6) {
@@ -867,12 +868,16 @@ span {
 
 /* Desktop */
 @media (min-width: 1200px) {
+  .hero__poster {
+    margin-block: 16rem 4rem;
+  }
+
   .hero__quotes__item {
-    max-width: 400px;
+    max-width: 360px;
   }
 
   .hero__quotes__item--text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .header-content {
